@@ -53,5 +53,7 @@ I had to retrain the model a couple of times, because it had difficulty with som
 
 ## Ideas about how other might improve upon your work
 
+If we had more time, we would have tried this approach on a real baseball bat and tennis ball. However, you must attach a battery to the microbit in this case, as a USB cable would constrain range of motion too much. We did not use a battery pack because for my paper wand, the weight would have caused too much inconvenience.
+Additionally, future work could add a UI to the project. We did not have much feedback other than the green output bars in Wekinator. The limitation with those green output bars is that though the green light will tell you when you have done the gesture, it flashes so quickly that it is hard to tell how well you did the gesture. Future work would add a UI on top of this, using the outputs from Wekinator as inputs to the UI. The UI would provide auditory feedback such as "Good job! Your stroke was excellent" when the match rate is high, and "You could do better next time!" when the match rate is low, but the gesture was still identified.
 
 ## Demo video
