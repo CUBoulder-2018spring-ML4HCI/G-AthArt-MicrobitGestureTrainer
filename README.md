@@ -43,6 +43,9 @@ We extracted MFCC values from a voice feed. MFCC's, as mentioned in the Kadenze 
 For the gestural portion, we simple grabbed the 3 raw accelerometer values from the Microbit processing file, while the Microbit was plugged into the computer. Wekinator was able to process these values quite efficiently with dynamic time warping.
 
 ### ML model structure
+
+Dynamic time warping is the best choice for this application. If you wanted to create a Harry Potter simulation in real life, you would need to not only recognize the data that is associated with a particular gesture, you would have to mark the exact moment that the gesture ended. That way, you could create a light show for when the spell was sent out of the wand, or similar. Classification doesn't take into account the time factor, so DTW is necessary. You could combine it with regression to find out where the spell was aiming towards - some spot on the wall, perhaps. However, to know when the gesture was completed, DTW is necessary.
+
 At the beginning of each gesture, I held down the plus key on the Wekinator interface, only releasing it when the gesture was over. To increase fidelity of matching, I included a category for noise, which would be trained on the microphone and microbit sitting stationary with no input. Without this noise category, which turns green when nothing is happening, Wekinator may get false positives more often.
 The categories were as followed:
 
